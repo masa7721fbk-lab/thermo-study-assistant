@@ -1,8 +1,14 @@
 # 熱力学ノート
 
 これは、現在流体力学や熱力学の授業をより効率的に進めるために作りました。熱力学の問題を解くとき、「答えは分かっても、授業のどこを復習すればよいか分からない」という不便から作った学習アプリです。質問・問題写真・途中式を送り、解説を読んで、そのまま追加質問できます。関連する教材ページも一緒に案内します。（教科書は工業熱力学）
-
 **[公開デモを開く](https://thermo-study-demo.mellowcomet39.chatgpt.site/)**
+
+<img width="890" height="665" alt="image" src="https://github.com/user-attachments/assets/c4c176e3-c7fd-4402-969b-818f43d3709e" />
+<img width="1024" height="647" alt="image" src="https://github.com/user-attachments/assets/0adec760-165f-42ff-b13e-1a6091384914" />
+<img width="568" height="506" alt="image" src="https://github.com/user-attachments/assets/029b0b24-d1eb-4c8f-9e94-41fa6639d302" />
+
+
+
 
 ## 使い方
 
