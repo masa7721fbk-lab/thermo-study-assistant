@@ -1,0 +1,14 @@
+{
+  "name": "thermo-study-assistant",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "test": "node scripts/build.mjs && node --test scripts/worker.test.mjs",
+    "dev": "node scripts/build.mjs && node --env-file-if-exists=.env scripts/dev.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

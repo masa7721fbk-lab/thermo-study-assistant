@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>熱力学ノート</title><!-- APP_STYLE --></head>
+<body>
+<header><a class="brand" href="/">熱力学ノート</a><a class="help-link" href="#about">使い方</a></header>
+<main class="workspace">
+<section class="composer" aria-labelledby="question-title">
+<h1 id="question-title">問題を送る</h1>
+<form id="form">
+<label class="sr-only" for="question">質問</label>
+<textarea id="question" rows="5" maxlength="5000" placeholder="問題文や、分からないところを書いてください。写真だけでも送れます。"></textarea>
+<label class="file-label" for="problem-image">問題の写真</label>
+<input id="problem-image" type="file" accept="image/jpeg,image/png,image/webp">
+<div id="problem-preview" class="preview" hidden></div>
+<details class="thinking"><summary>自分の考え・途中式を添える</summary>
+<label class="sr-only" for="reasoning">自分の考え</label>
+<textarea id="reasoning" rows="3" maxlength="5000" placeholder="どこまで解けたか、どこで迷ったか"></textarea>
+<label class="file-label" for="reasoning-image">途中式の写真</label>
+<input id="reasoning-image" type="file" accept="image/jpeg,image/png,image/webp">
+<div id="reasoning-preview" class="preview" hidden></div>
+</details>
+<button id="ask-ai" class="primary" type="button" disabled>質問する</button>
+<details class="material-search"><summary>教材のページだけ探す</summary>
+<button id="search" class="secondary" type="submit" disabled>入力した言葉で検索</button>
+<p id="status" role="status"></p>
+<div id="results" aria-live="polite"></div>
+</details>
+</form>
+</section>
+<section class="reading" aria-label="回答">
+<div id="ai-result" aria-live="polite"><p class="empty">回答はここに表示されます。</p></div>
+<p id="ai-status" role="status">接続準備中…</p>
+</section>
+</main>
+<footer>
+<details id="about"><summary>使い方・教材について</summary>
+<p>問題を送ったあと、回答の下から続けて質問できます。別の問題は左の入力欄から送ってください。会話は再読み込みすると消えます。</p>
+<p>写真はJPG・PNG・WebP、各10MBまで。送信した文章と写真はGoogleのGemini APIで処理します。このアプリでは会話を保存しません。</p>
+<p id="material-title"></p>
+<p>教材は温度・単位・第一法則・仕事・エンタルピー・比熱などの索引（本のp.2–17）です。PDF全文は公開・送信していません。参照ページは登録済みの要約から案内します。</p>
+<p>回答には一般知識や計算による推論を含みます。読み取った条件・計算結果を確認して使ってください。教材で確認できない場合はネット検索も選べます。</p>
+</details>
+</footer>
+<!-- APP_SCRIPT -->
+</body></html>
